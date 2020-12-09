@@ -7,14 +7,14 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
     
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 :root {
-    --calendar-bg-color: #262829;
-    --calendar-font-color: #FFF;
-    --weekdays-border-bottom-color: #404040;
-    --calendar-date-hover-color: #505050;
-    --calendar-current-date-color: #1b1f21;
-    --calendar-today-color: #2196F3;
-    --calendar-today-innerborder-color: #000;
-    --calendar-nextprev-bg-color: #1a1f21;
+    --calendar-bg-color: #e8e5e4;
+    --calendar-font-color: #8c7f7b;
+    --weekdays-border-bottom-color: #8c7f7b;
+    --calendar-date-hover-color: #8c7f7b;
+    --calendar-current-date-color: #ebe5e4;
+    --calendar-today-color: #ffffff;
+    --calendar-today-innerborder-color: #ffffff;
+    --calendar-nextprev-bg-color: #e8e5e4;
 }
 
 * {
@@ -23,10 +23,10 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 }
 
     body{
-    background-color: #262829;
+    background-color: #8c7f7b;
     }
 .calendar {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Noto', serif;
     position: relative;
     max-width: 400px; /*change as per your design need */
     min-width: 320px;
@@ -130,7 +130,7 @@ Source https://codepen.io/ismailvtl/pen/KrVrbp
 
 .calendar .calendar-inner .calendar-controls .calendar-next a,
 .calendar .calendar-inner .calendar-controls .calendar-prev a {
-    font-family: consolas, sans-serif;
+    font-family: Noto, serif;
     font-size: 26px;
     text-decoration: none;
     padding: 4px 12px;
@@ -148,20 +148,20 @@ function CalendarControl() {
   const calendar = new Date();
   const calendarControl = {
     localDate: new Date(),
-    calWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    calWeekDays: ["M", "T", "W", "T", "F", "S", "S"],
     calMonthName: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
+      "January",
+      "February",
+      "March",
+      "April",
       "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
+      "June",
+      "July",
+      "August",
+      "September",
+      "Octtober",
+      "November",
+      "December"
     ],
     daysInMonth: function(month, year) {
       return new Date(year, month, 0).getDate();
