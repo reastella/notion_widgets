@@ -11,7 +11,7 @@
         /*CSS RESETS*/
 
 body{
-    background-color: #fff;
+    background-color: #8c7f7b;
     line-height: 1.6;
 
 }
@@ -38,10 +38,10 @@ h1 {
 .card {
     padding: 10px 25px 10px 25px;
     border-radius: 10px;
-    background: #009688;
-    color: #fff;
+    background: #e8e5e4;
+    color: #8c7f7b;
     display: inline-block;
-    box-shadow: 2px 2px 1px 0px #295C7B;
+    box-shadow: 0px 0px 0px 0px ;
 }
 
 .card:hover {
@@ -51,7 +51,7 @@ h1 {
 
 .clock {
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto', serif;
     font-weight: bold;
     font-size: 1.2em;
     /* padding-left: 20px; */
@@ -72,21 +72,21 @@ h1 {
     min-width: 162px;
     /* padding-right: 30px; */
     /* border-right: 2px solid #295C7B; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto', serif;
     font-size: 1.2em;
 }
 .greet{
     
     min-width: 162px;
     /* padding-right: 30px; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto', serif;
     font-size: 1.2em;
 }
 
     </style>
 </head>
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Noto:400,700" rel="stylesheet">
 
 <div class="full-table">
   <div class="table-cell">
@@ -126,11 +126,11 @@ else{
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = 'Good Morning  ';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
+        greet = 'Good Morning  Rea ';
+    else if (hrs >= 08 && hrs <= 12)
+        greet = 'Good Afternoon Rea ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
+        greet = 'Good Evening Rea ';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
